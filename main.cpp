@@ -4,6 +4,7 @@ using namespace std;
 
 int main()
 {
-    cout<<"testing SPA";
+    cout<<"Size of operator use";
+    cout <<" The Size of operator  for double" + sizeof(double);
     return 0;
 }
