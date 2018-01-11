@@ -1,21 +1,16 @@
 #include<iostream>
 
-extern int a=0;
+#define pi 3.14;
 using namespace std;
 
 int main()
-{
+{   const int kc=99;
+    float a=0.0;
 
-    cout<<"Enum types use";
-    cout<< "defe the enumation enum enum-name { list of names } var-list; "<<endl;
-    enum colours{red,green,blue,pine=5,apple} c;
-    c=red;
-    cout<< c<<endl;
-    c=blue;
-    cout<< c<<endl;
-    c=apple;
-    cout<< c<<endl;
-
+    a=3*pi;
+    cout<<a<<endl;
+    a=4*kc;
+    cout<<a;
 
     return 0;
 }
