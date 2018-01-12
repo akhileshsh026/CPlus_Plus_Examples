@@ -6,18 +6,32 @@ using std::setw;
 
 int main () {
 
-   int n[ 10 ]; // n is an array of 10 integers
+   int n[3][3]; // n is an array of 10 integers
 
    // initialize elements of array n to 0
-   for ( int i = 0; i < 10; i++ ) {
-      n[ i ] = i + 100; // set element at location i to i + 100
-   }
-   cout << "Element" << setw( 13 ) << "Value" << endl;
+
 
    // output each array element's value
-   for ( int j = 0; j < 10; j++ ) {
-      cout << setw( 7 )<< j << setw( 13 ) << n[ j ] << endl;
+   for ( int j = 0; j < 3; j++ ) {
+     for(int i=0;i<3;i++)
+     {
+           cin>>n[j][i];
+     }
    }
 
+    cout << "Row[0][0]" << setw( 13 ) << "Row[0][1]" << setw( 13 ) << "Row[0][2]" << endl;
+
+
+
+   for ( int j = 0; j < 3; j++ )
+    {
+      for(int i=0;i<3;i++)
+        {
+           cout<<n[j][i]<<"\t";
+        }
+           cout<<endl;
+    }
+
    return 0;
+
 }
