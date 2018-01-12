@@ -1,21 +1,22 @@
 #include <iostream>
+
 using namespace std;
 
-#include <iomanip>
-using std::setw;
+int * getrandom()
+{
+ static int r[] = {1,2,3}; // must be static
+ return r;
+}
 
-int main () {
-
-int bal[10]={1,2,3,4,5,6,7,8,9,10};
-
-
-   cout << "Array values using balance as address " << endl;
-
-   for ( int i = 0; i < 10; i++ ) {
-      cout << "*(bal + " << i << ") : ";
-      cout << *(bal + i) << endl;
-   }
-
+int main()
+{
+    int *p;
+    
+    p = getrandom();
+    
+    for(int i=0;i<3;i++)
+    {
+       cout << *(p+i) << endl; 
+    }
    return 0;
-
 }
