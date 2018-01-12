@@ -6,40 +6,25 @@ using std::setw;
 
 int main () {
 
-   int n[3][3]; // n is an array of 10 integers
+int bal[10]={1,2,3,4,5,6,7,8,9,10};
 
-   // initialize elements of array n to 0
+int *p;
 
+p=bal;
 
-   // output each array element's value
-   for ( int j = 0; j < 3; j++ ) {
-     for(int i=0;i<3;i++)
-     {
-           cin>>n[j][i];
-     }
-   }
+// print address of Array
 
-    cout << "Row[0][0]" << setw( 13 ) << "Row[0][1]" << setw( 13 ) << "Row[0][2]" << endl;
+for(int i=0;i<10;i++)
+{
+    cout<<&p[i]<<endl;
+}
 
+// Print items of Array
 
-
-//   for ( int j = 0; j < 3; j++ )
-//    {
-//      for(int i=0;i<3;i++)
-//        {
-//           cout<<n[j][i]<<"\t";
-//        }
-//           cout<<endl;
-//    }
-
-   for ( int j = 0; j < 3; j++ )
-    {
-      for(int i=0;i<3;i++)
-        {
-           cout<<n[j][i]<<setw(13);
-        }
-           cout<<endl;
-    }
+for(int i=0;i<10;i++)
+{
+    cout<<p[i]<<endl;
+}
 
 
 
