@@ -12,21 +12,16 @@ int *p;
 
 p=bal;
 
-// print address of Array
+ for ( int i = 0; i < 10; i++ ) {
+      cout << "*(p + " << i << ") : ";
+      cout << *(p + i) << endl;
+   }
+   cout << "Array values using balance as address " << endl;
 
-for(int i=0;i<10;i++)
-{
-    cout<<&p[i]<<endl;
-}
-
-// Print items of Array
-
-for(int i=0;i<10;i++)
-{
-    cout<<p[i]<<endl;
-}
-
-
+   for ( int i = 0; i < 10; i++ ) {
+      cout << "*(bal + " << i << ") : ";
+      cout << *(bal + i) << endl;
+   }
 
    return 0;
 
